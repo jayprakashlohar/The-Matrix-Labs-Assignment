@@ -34,7 +34,6 @@ const Sidebar = () => {
       zIndex="10"
       top={0}
     >
-      {/* close icon */}
       <Box
         display={{ base: "block", "639px": "none" }}
         onClick={handleHideSidebar}
@@ -159,7 +158,6 @@ const Sidebar = () => {
           </NavLink>
         </Box>
 
-        {/* Social media Logos */}
 
         <Box
           ml={"34px"}

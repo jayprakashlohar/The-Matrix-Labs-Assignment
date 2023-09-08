@@ -1,4 +1,4 @@
-import { Box, Circle, GridItem, Text, Image } from "@chakra-ui/react";
+import { Box, GridItem, Text, Image } from "@chakra-ui/react";
 import { Divider } from "@chakra-ui/react";
 import infoIcon from "../assets/infoIcon.png";
 import basetoken from "../assets/basetoken.png";
