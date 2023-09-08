@@ -1,6 +1,8 @@
-import { Box, Circle, GridItem, Text } from "@chakra-ui/react";
-
+import { Box, Circle, GridItem, Text, Image } from "@chakra-ui/react";
 import { Divider } from "@chakra-ui/react";
+import infoIcon from "../assets/infoIcon.png";
+import basetoken from "../assets/basetoken.png";
+import priceIcon from "../assets/priceIcon.png";
 
 const CryptoCard = ({
   pairCreatedAt,
@@ -68,27 +70,15 @@ const CryptoCard = ({
           </Box>
         </Box>
         {/* info Logo */}
-        <Circle
+        <Image
+          src={infoIcon}
           cursor="pointer"
           size={"56px"}
           bg="#960252"
           position={"absolute"}
           right="8px"
           bottom={"8px"}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-              fill="white"
-            />
-          </svg>
-        </Circle>
+        />
       </GridItem>
 
       {/* ------------ Base Token ---------------- */}
@@ -140,27 +130,16 @@ const CryptoCard = ({
           </Box>
         </Box>
         {/* info Logo */}
-        <Circle
+
+        <Image
+          src={basetoken}
           cursor="pointer"
           size={"56px"}
           bg="#960252"
           position={"absolute"}
           right="8px"
           bottom={"8px"}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-              fill="white"
-            />
-          </svg>
-        </Circle>
+        />
       </GridItem>
 
       {/* ----------------- Quote Token ------------------- */}
@@ -212,27 +191,15 @@ const CryptoCard = ({
           </Box>
         </Box>
         {/* info Logo */}
-        <Circle
+        <Image
+          src={basetoken}
           cursor="pointer"
           size={"56px"}
           bg="#960252"
           position={"absolute"}
           right="8px"
           bottom={"8px"}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-              fill="white"
-            />
-          </svg>
-        </Circle>
+        />
       </GridItem>
 
       {/* ------------------- Price ----------------------- */}
@@ -278,27 +245,16 @@ const CryptoCard = ({
           </Box>
         </Box>
         {/* info Logo */}
-        <Circle
+
+        <Image
+          src={priceIcon}
           cursor="pointer"
           size={"56px"}
           bg="#960252"
           position={"absolute"}
           right="8px"
           bottom={"8px"}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-              fill="white"
-            />
-          </svg>
-        </Circle>
+        />
       </GridItem>
 
       <Divider display={{ base: "block", "639px": "none" }}></Divider>

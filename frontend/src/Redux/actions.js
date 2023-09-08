@@ -34,9 +34,6 @@ export const getPairData = (url) => async (dispatch) => {
   try {
     dispatch(getRequestPair());
     const res = await axios.get(url);
-    console.log(url);
-    console.log("Response", res);
-    console.log(res.data.pairs);
     let data = res.data.pairs;
     const max10Pairs = data.slice(0, 10);
     max10Pairs.sort((a, b) => {

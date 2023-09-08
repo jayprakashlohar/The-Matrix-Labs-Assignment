@@ -1,4 +1,4 @@
-import { Box, Text ,Image} from "@chakra-ui/react";
+import { Box, Text, Image } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { AiFillCloseCircle } from "react-icons/ai";
@@ -8,18 +8,15 @@ import {
   initializeCryptoData,
   initializePairData,
 } from "../Redux/pairTokenSlice";
-import facebook from "../assets/facebook.png"
-import linkedin from "../assets/linkedin.png"
-import twitter from "../assets/twitter.png"
-
+import facebook from "../assets/facebook.png";
+import linkedin from "../assets/linkedin.png";
+import twitter from "../assets/twitter.png";
 
 const Sidebar = () => {
+  const dispatch = useDispatch();
   const { isSideBarHidden } = useSelector(
     ({ pairTokenReducer }) => pairTokenReducer
   );
-
-  const dispatch = useDispatch();
-
 
   const handleHideSidebar = () => {
     dispatch(hideSidebar(true));
@@ -171,7 +168,6 @@ const Sidebar = () => {
           justifyContent={"space-between"}
           width={"112px"}
         >
-
           <Image src={facebook} />
           <Image src={linkedin} />
           <Image src={twitter} />
