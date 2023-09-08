@@ -6,7 +6,7 @@ import {
   InputRightElement,
   Text,
 } from "@chakra-ui/react";
-import {AiOutlineSearch} from "react-icons/ai"
+import { AiOutlineSearch } from "react-icons/ai";
 import AllRoutes from "./../Routes/AllRoutes";
 import { getCryptoData } from "../Redux/actions";
 import { useDispatch, useSelector } from "react-redux";
@@ -15,16 +15,15 @@ import { useWeb3Modal } from "@web3modal/react";
 import { useLocation } from "react-router-dom";
 import { getPairData } from "../Redux/actions";
 
-const REACT_APP_URL = "https://api.dexscreener.com/latest/dex"
+const REACT_APP_URL = "https://api.dexscreener.com/latest/dex";
 
 const Home = () => {
-  const { open, close } = useWeb3Modal();
+  const { open } = useWeb3Modal();
 
   const dispatch = useDispatch();
   const { isError } = useSelector(({ pairTokenReducer }) => pairTokenReducer);
 
   const location = useLocation();
-
 
   const handleSearch = (e) => {
     const searchQuery = e.target.value.trim();

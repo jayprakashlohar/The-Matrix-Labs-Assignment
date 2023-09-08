@@ -4,11 +4,10 @@ import { useSelector } from "react-redux";
 import { Spinner } from "@chakra-ui/react";
 
 const Token = () => {
-  const { isLoading, isError, data } = useSelector(
+  const { isLoading, data } = useSelector(
     ({ pairTokenReducer }) => pairTokenReducer
   );
 
-  console.log(isLoading, isError, data);
 
   if (isLoading) {
     return (
