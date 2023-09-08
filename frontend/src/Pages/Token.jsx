@@ -1,5 +1,5 @@
 import { Box, SimpleGrid, Text } from "@chakra-ui/react";
-import CryptoCard from "../components/CryptoCard";
+import CryptoCard from "../Components/CryptoCard";
 import { useSelector } from "react-redux";
 import { Spinner } from "@chakra-ui/react";
 

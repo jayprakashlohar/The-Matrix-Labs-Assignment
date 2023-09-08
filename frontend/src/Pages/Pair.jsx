@@ -1,6 +1,6 @@
 import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
-import CryptoCard from "../components/CryptoCard";
+import CryptoCard from "../Components/CryptoCard";
 import { Spinner } from "@chakra-ui/react";
 
 const Pair = () => {
