@@ -45,3 +45,4 @@ root.render(
     <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
   </>
 );
+

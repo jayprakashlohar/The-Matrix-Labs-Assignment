@@ -3,6 +3,7 @@ import { Divider } from "@chakra-ui/react";
 import infoIcon from "../assets/infoIcon.png";
 import basetoken from "../assets/basetoken.png";
 import priceIcon from "../assets/priceIcon.png";
+import PropTypes from "prop-types";
 
 const CryptoCard = ({
   pairCreatedAt,
@@ -260,6 +261,25 @@ const CryptoCard = ({
       <Divider display={{ base: "block", "639px": "none" }}></Divider>
     </>
   );
+};
+
+CryptoCard.propTypes = {
+  pairCreatedAt: PropTypes.string.isRequired,
+  symbol: PropTypes.string.isRequired,
+  dexId: PropTypes.string.isRequired,
+  pairAddress: PropTypes.string.isRequired,
+  baseToken: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    symbol: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
+  }).isRequired,
+  quoteToken: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    symbol: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
+  }).isRequired,
+  priceNative: PropTypes.string.isRequired,
+  priceUsd: PropTypes.string.isRequired,
 };
 
 export default CryptoCard;
