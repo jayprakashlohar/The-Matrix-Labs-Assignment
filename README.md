@@ -59,6 +59,6 @@
 # Deployed Link
 
 ### Frontend
-
+https://the-matrix-labs-assignment.vercel.app/
 
 
