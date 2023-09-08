@@ -1,7 +1,7 @@
 import "./App.css";
 import { Box } from "@chakra-ui/react";
-import Sidebar from "./components/Sidebar";
-import Footer from "./components/Footer";
+import Sidebar from "./Components/Sidebar";
+import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 
 function App() {
